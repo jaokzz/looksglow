@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+  color: inherit;
+
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    color: #8f26f1;
+  }
+}
+
+ul {
+  list-style: none;
+  gap: 3rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.lista {
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: var(--purple-base);
+  padding: 1rem;
+  border-radius: 1rem;
+
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #430081;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.separator {
+  border: 1px solid var(--purple-base);
+  max-width: 70px;
+
+  margin: 2rem 0rem;
+}
+
+strong {
+  color: var(--purple-base);
+}

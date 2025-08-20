@@ -1,0 +1,15 @@
+.about .container {
+  margin: var(--margin-base);
+
+  & h1 {
+    font-size: var(--font-size-h1);
+    max-width: 600px;
+    margin-top: 7rem;
+  }
+  & p {
+    font-size: var(--font-size-p);
+    max-width: 600px;
+    letter-spacing: 0.05em;
+    margin-bottom: 2.3rem;
+  }
+}
