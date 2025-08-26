@@ -3,11 +3,13 @@
     --ff-base: font-family: "Inter", sans-serif;
 
 
+    --font-size-h1: 4.5rem;
     --font-size-p: 1.5rem;
-    --font-size-h1: 3.5rem;
+    --font-size-ul: 1.2rem;
+    --font-size-a: 2rem;
 
     --purple-base: #8A2BE2;
-    --margin-base: 2rem;
+    --margin-base: 3rem;
 }
 
 body {

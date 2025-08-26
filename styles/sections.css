@@ -1,15 +1,29 @@
+section {
+  margin-top: 4rem;
+}
+
 .about .container {
-  margin: var(--margin-base);
 
   & h1 {
     font-size: var(--font-size-h1);
-    max-width: 600px;
-    margin-top: 7rem;
+    max-width: 1000px;
   }
   & p {
     font-size: var(--font-size-p);
-    max-width: 600px;
+    max-width: 1000px;
     letter-spacing: 0.05em;
-    margin-bottom: 2.3rem;
+    margin-bottom: 7rem;
+  }
+
+  & a {
+    font-size: 1.5rem;
+  }
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  & img {
+    width: 390px;
+    margin-right: 240px;
   }
 }

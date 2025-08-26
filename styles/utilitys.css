@@ -1,6 +1,9 @@
 a {
   text-decoration: none;
   color: inherit;
+  font: var(--ff-base);
+  font-weight: 700;
+  text-transform: uppercase;
 
   transition: all 0.25s ease-in-out;
   &:hover {
@@ -25,7 +28,7 @@ ul {
 
 .btn {
   background-color: var(--purple-base);
-  padding: 1rem;
+  padding: 1.9rem 2.9rem;
   border-radius: 1rem;
 
   cursor: pointer;
