@@ -1,20 +1,19 @@
 header {
-  /* margin: var(--margin-base); */
   margin-right: 6rem;
-  .logo {
-    border-bottom: 1.2px solid var(--purple-base);
-    border-radius: 1rem;
+}
 
-    & img {
-      width: 300px;
-      height: 80px;
-    }
+header .logo {
+  border-bottom: 1.2px solid var(--purple-base);
+  border-radius: 1rem;
+}
 
-  }
+header .logo img {
+  width: 300px;
+  height: 80px;
+}
 
-  ul {
-    color: rgb(255, 255, 255);
-    font-size: var(--font-size-ul);
-    gap: 5rem;
-  }
+header ul {
+  color: rgb(255, 255, 255);
+  font-size: var(--font-size-ul);
+  gap: 5rem;
 }
