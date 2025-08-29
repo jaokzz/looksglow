@@ -1,0 +1,103 @@
+.btn {
+    --radius: 14px;
+    --pad-y: 1.1rem;
+    --pad-x: 1.8rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+
+    padding: var(--pad-y) var(--pad-x);
+    border-radius: var(--radius);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    color: var(--text-100);
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    transition: transform .18s ease, box-shadow .18s ease, background-position .35s ease;
+    will-change: transform, box-shadow, background-position;
+}
+
+.btn--primary {
+    background: linear-gradient(135deg,
+            var(--purple-500) 0%,
+            var(--purple-600) 55%,
+            var(--purple-700) 100%);
+    background-size: 160% 160%;
+    color: #fff;
+    box-shadow: var(--shadow-purple);
+    border: none;
+}
+
+.btn--primary:hover {
+    transform: translateY(-2px) scale(1.02);
+    background-position: 100% 0%;
+    box-shadow: 0 16px 36px rgba(138, 43, 226, .45);
+    color: var(--purple-400);
+
+}
+
+.btn--outline {
+    background:
+        linear-gradient(var(--bg-900), var(--bg-900)) padding-box,
+        linear-gradient(135deg, var(--purple-500), var(--purple-700)) border-box;
+    border: 2px solid transparent;
+    color: var(--purple-400);
+
+
+}
+
+.btn--outline:hover {
+    color: var(--text-100);
+    background:
+        linear-gradient(135deg, var(--purple-500), var(--purple-700)) padding-box,
+        linear-gradient(135deg, var(--purple-500), var(--purple-700)) border-box;
+    box-shadow: var(--shadow-purple);
+    transform: translateY(-2px);
+}
+
+.ia-btn {
+    --pad-x: 5rem;
+}
+
+
+/* Variaveis */
+
+
+.btn:focus-visible {
+    outline: 3px solid rgba(154, 118, 255, .9);
+    outline-offset: 3px;
+    border-color: transparent;
+}
+
+.btn:active {
+    transform: translateY(1px) scale(.99);
+}
+
+.btn[disabled] {
+    opacity: .55;
+    pointer-events: none;
+}
+
+@media (max-width:768px) {
+    .ia-btn {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    header .btn {
+        padding: .9rem 1.4rem;
+        font-size: .95rem;
+    }
+}
+
+.btn.ia-btn {
+    --pad-y: 2rem;
+    --pad-x: 6rem;
+    padding: var(--pad-y) var(--pad-x);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

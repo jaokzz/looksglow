@@ -6,13 +6,14 @@
 .about .container h1 {
   font-size: var(--font-size-h1);
   max-width: 1000px;
+
 }
 
 .about .container p {
   font-size: var(--font-size-p);
   max-width: 1000px;
   letter-spacing: 0.05em;
-  margin-bottom: 7rem;
+  /* margin-bottom: 7rem; */
 }
 
 .about .container a {
