@@ -2,16 +2,16 @@ a:hover {
   color: #8f26f1;
 }
 
-ul {
+.lista ul {
   list-style: none;
   gap: 3rem;
 }
 
-li {
+.lista ul li {
   transition: all 0.25s ease-in-out;
 }
 
-li:hover {
+lista ul li:hover {
   background-color: black;
   transform: scale(1.1);
 }

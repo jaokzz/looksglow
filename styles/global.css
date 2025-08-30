@@ -2,6 +2,8 @@
   --ff-base: font-family: "Inter", sans-serif;
 
   --font-size-h1: 4.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 2.5rem;
   --font-size-p: 1.5rem;
   --font-size-ul: 1.2rem;
   --font-size-a: 2rem;
@@ -12,21 +14,24 @@
 
   /* Buttons */
 
-  --bg-900:#000;
-  --text-100:#fff;
+  --bg-900: #000;
+  --text-100: #fff;
 
-  --purple-400:#A975FF;
-  --purple-500:#9B5CFF;
-  --purple-600:#8A2BE2;
-  --purple-700:#6722D2;
+  --purple-400: #A975FF;
+  --purple-500: #9B5CFF;
+  --purple-600: #8A2BE2;
+  --purple-700: #6722D2;
 
-  --shadow-purple: 0 12px 28px rgba(138,43,226,.35);
+  --shadow-purple: 0 12px 28px rgba(138, 43, 226, .35);
 }
 
 body {
   background-color: rgb(0, 0, 0);
   font-family: "Inter", sans-serif;
   color: rgb(255, 255, 255);
+
+  background: linear-gradient(249deg, #000 60%, #4c1d95);
+
 }
 
 *,
@@ -70,12 +75,16 @@ html {
 /* Computador Acima de 1500px */
 @media (min-width: 1500px) and (max-width: 2100px) {
   :root {
-  --font-size-h1: 5.5rem;
-  --font-size-p: 2.3rem;
+    --font-size-h1: 5.5rem;
+    --font-size-p: 2.3rem;
   }
 
-  main #app {
+  main .face-page {
     margin: 2rem;
+  }
+
+  section {
+    margin-top: 2.5rem;
   }
 
   .about .container h1 {
@@ -92,21 +101,18 @@ html {
     align-items: center;
     justify-content: space-between;
   }
-
-  .ia-btn {
-    margin-bottom: 10em;
-  }
-
-
-
 }
 
 
 /* Dispositivos com 1280px aproximadamente  */
 @media (min-width: 1024px) and (max-width: 1500px) {
 
-  main #app {
+  main .face-page {
     margin: 2rem;
+  }
+
+  section .face-page {
+    margin-top: 3.5rem;
   }
 
 
@@ -117,16 +123,6 @@ html {
   .about .img-principal {
     width: 390px;
 
-  }
-
-  .lista-and-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .ia-btn {
-    margin-bottom: 10em;
   }
 }
 
@@ -139,43 +135,36 @@ html {
     --font-size-a: 1.2rem;
   }
 
-  header {
-    margin-right: 0;
-    margin-left: 0;
+  /* logo menor no mobile */
+  header .logo svg,
+  header .logo img {
+    width: 200px;
+    display: block;
   }
 
-  .lista-and-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-  }
-
-  header .logo {
-    margin-inline: auto;
+  header .lista-and-logo .flex {
+    margin-top: 0;
   }
 
   header .lista {
-    margin-left: 0;
-    width: 100%;
+    display: none;
   }
 
-  header .lista ul {
-    justify-content: center;
-    gap: 1.25rem;
+  .conect.btn {
+    padding: .6rem 1rem;
+    line-height: 1;
   }
 
-  header {
-    margin: 1rem 0;
-  }
+  header .logo {
+    display: flex;
+    align-items: center;
+    transform: scale(.7);
 
-  main {
-    margin: 1rem;
   }
 
   section {
-    margin-top: 2rem;
+    /*  margin section pag principal */
+    margin: 1rem;
   }
 
   .container {

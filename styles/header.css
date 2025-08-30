@@ -5,22 +5,6 @@
   justify-content: space-between;
 }
 
-header .logo {
-  border-bottom: 1.2px solid var(--purple-base);
-  border-radius: 15px;
-}
-
-header .logo img {
-  display: block;
-  width: 280px;
-  height: auto;
-}
-
-
-header .lista {
-  margin-left: auto; 
-}
-
 header .lista ul { 
   font-size: var(--font-size-ul);
   list-style: none;
