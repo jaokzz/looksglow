@@ -30,8 +30,9 @@ body {
   font-family: "Inter", sans-serif;
   color: rgb(255, 255, 255);
 
-  background: linear-gradient(249deg, #000 60%, #4c1d95);
+  background: linear-gradient(249deg, #000 50%, #4c1d95 100%);
 
+  /* TALVEZ, SO ADAPTAR UM POUCO background: linear-gradient(180deg, #000 0%, #411386 50%, #14032e 100%); */
 }
 
 *,
@@ -107,6 +108,11 @@ html {
 /* Dispositivos com 1280px aproximadamente  */
 @media (min-width: 1024px) and (max-width: 1500px) {
 
+  body {
+    background: linear-gradient(258deg, #000 60%, #4c1d95);
+
+  }
+
   main .face-page {
     margin: 2rem;
   }
@@ -124,6 +130,8 @@ html {
     width: 390px;
 
   }
+
+
 }
 
 /* Mobile (até 768px)  */
@@ -134,6 +142,11 @@ html {
     --font-size-ul: .5rem;
     --font-size-a: 1.2rem;
   }
+
+  body {
+    background: linear-gradient(210deg, #000 0%, #44138d 50%, #540ebd 100%);
+  }
+
 
   /* logo menor no mobile */
   header .logo svg,
