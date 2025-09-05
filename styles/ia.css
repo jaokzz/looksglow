@@ -39,12 +39,6 @@
     font-weight: 700;
 }
 
-.about-ia .separator {
-    max-width: 1100px;
-    margin-bottom: 3rem;
-}
-
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));

@@ -30,10 +30,10 @@ body {
   font-family: "Inter", sans-serif;
   color: rgb(255, 255, 255);
 
-  background: linear-gradient(249deg, #000 50%, #4c1d95 100%);
-
-  /* TALVEZ, SO ADAPTAR UM POUCO background: linear-gradient(180deg, #000 0%, #411386 50%, #14032e 100%); */
+  /* background: linear-gradient(250deg, #000 50%, #4c1d95 100%); */
 }
+
+
 
 *,
 *::after,
