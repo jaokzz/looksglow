@@ -21,8 +21,8 @@ lista ul li:hover {
   text-transform: uppercase;
 }
 
-@media (width < 1250px) {
+/* @media (width < 1250px) {
   .lista {
     display: none;
   }
-}
+} */

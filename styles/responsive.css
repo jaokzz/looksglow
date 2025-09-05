@@ -1,0 +1,567 @@
+/* Preferências do usuário */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
+        scroll-behavior: auto;
+    }
+}
+
+/* ───────────────────────────────────────────────
+   ≤ 360px — telefones muito pequenos
+   ─────────────────────────────────────────────── */
+@media (max-width: 360px) {
+    .face-page header .lista-and-logo {
+        gap: .75rem;
+    }
+
+    h1 {
+        font-size: clamp(1.4rem, 6vw, 1.8rem);
+    }
+
+    .btn,
+    .btn.btn--primary,
+    .btn.btn--outline,
+    .ia-btn {
+        font-size: .95rem;
+        padding: .6rem .9rem;
+    }
+
+    .icons {
+        gap: .4rem;
+    }
+}
+
+/* ───────────────────────────────────────────────
+   ≤ 480px — mobile padrão
+   ─────────────────────────────────────────────── */
+@media (max-width: 480px) {
+
+    html,
+    body,
+    main,
+    #app,
+    .face-page,
+    .about,
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    .face-page header .lista-and-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .face-page header .logo svg {
+        width: 160px;
+        height: auto;
+    }
+
+    .lista ul.flex {
+        display: none;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 1.25rem;
+        text-align: center;
+    }
+
+    .about .container h1 {
+        font-size: clamp(3rem, 5rem, 2.2rem);
+        line-height: 1.35;
+        letter-spacing: -0.01em;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .about .container p {
+        font-size: clamp(0.95rem, 8vw, 1.05rem);
+        line-height: 1.45;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .about .container {
+        order: 1;
+    }
+
+    .about .img-principal {
+        order: 2;
+    }
+
+    .about .img-principal img {
+        display: none;
+    }
+
+    .ia-btn {
+        width: 100%;
+    }
+
+    .about .ia-btn,
+    .btn.btn--primary,
+    .btn.btn--outline {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 520px;
+        margin-inline: auto;
+        font-size: clamp(0.95rem, 3.7vw, 1.05rem);
+        padding: 0.9rem 1rem;
+    }
+
+    #ia-page .card .icon {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+
+        gap: .6rem;
+
+        width: 40px;
+        height: 40px;
+    }
+
+    #ia-page .grid .card .icon {
+        display: grid;
+        place-items: center;
+        align-self: center;
+        margin: 0 auto .5rem auto;
+        inline-size: max-content;
+        line-height: 1;
+    }
+
+    #ia-page {
+        padding-inline: 1rem;
+    }
+
+    #ia-page .about-ia {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    #ia-page .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .75rem;
+        align-items: center;
+    }
+
+    #ia-page .grid,
+    .human-test .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .875rem;
+    }
+
+    #ia-page .card {
+        padding: 1rem;
+        min-height: 110px;
+    }
+
+
+    .blend-divider {
+        height: 32px;
+    }
+
+    .human-test {
+        text-align: center;
+    }
+
+    .human-test .profile-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .75rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .human-test .profile-pic img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 999px;
+        display: block;
+    }
+
+    .human-test .results-list {
+        width: 100%;
+        max-width: 420px;
+        margin-inline: auto;
+    }
+
+    .human-test .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .875rem;
+        margin-top: 1rem;
+    }
+
+    .human-test .card {
+        padding: 1rem;
+    }
+
+    .human-test .extra-info {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    h3 {
+        font-size: clamp(1.1rem, 4.5vw, 1.35rem);
+    }
+
+    h4 {
+        font-size: clamp(1rem, 4vw, 1.1rem);
+    }
+
+    p {
+        font-size: clamp(.95rem, 3.8vw, 1rem);
+    }
+}
+
+/* ───────────────────────────────────────────────
+   481–768px — celulares grandes até tablets pequenos
+   ─────────────────────────────────────────────── */
+@media (min-width: 481px) and (max-width: 768px) {
+    .face-page header .lista-and-logo {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lista ul.flex {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        align-items: center;
+        text-align: center;
+        padding-inline: 1rem;
+    }
+
+    .about .img-principal img {
+        width: min(100%, 560px);
+        height: auto;
+        margin-inline: auto;
+    }
+
+    .human-test {
+        padding-inline: 1rem;
+    }
+
+    .human-test .profile-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+
+    .human-test .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #ia-page {
+        padding-inline: 1rem;
+    }
+
+    #ia-page .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* ───────────────────────────────────────────────
+   769–1024px — tablets e notebooks compactos
+   ─────────────────────────────────────────────── */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .face-page header .lista-and-logo {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .lista ul.flex {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .face-page .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .75rem;
+        flex-wrap: wrap;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1.1fr .9fr;
+        align-items: center;
+        gap: 1.5rem;
+        padding-inline: 1.25rem;
+    }
+
+    .about .img-principal img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .human-test {
+        padding-inline: 1.25rem;
+    }
+
+    .human-test .profile-section {
+        display: grid;
+        grid-template-columns: .6fr 1.4fr;
+        gap: 1.25rem;
+        align-items: center;
+    }
+
+    .human-test .cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    #ia-page {
+        padding-inline: 1.25rem;
+    }
+
+    #ia-page .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* ───────────────────────────────────────────────
+   1025–1365px — notebooks
+   ─────────────────────────────────────────────── */
+@media (min-width: 1025px) and (max-width: 1365px) {
+    .face-page header .lista-and-logo {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .face-page .flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .lista ul.flex {
+        gap: 1.25rem;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1.1fr .9fr;
+        gap: 1.75rem;
+        align-items: center;
+    }
+
+    .human-test .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    #ia-page .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+}
+
+/* ───────────────────────────────────────────────
+   1366–1499px — desktops médios
+   ─────────────────────────────────────────────── */
+@media (min-width: 1366px) and (max-width: 1499px) {
+
+    main,
+    .container,
+    .about,
+    .human-test,
+    #ia-page {
+        margin-inline: auto;
+        max-width: 1120px;
+        width: min(100% - 2rem, 1120px);
+    }
+
+    .human-test .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #ia-page .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* ───────────────────────────────────────────────
+   1500px — monitores grandes
+   ─────────────────────────────────────────────── */
+@media (min-width: 1500px) {
+    :root {
+        --font-size-h1: 5rem;
+        --font-size-p: 2rem;
+    }
+
+    .face-page {
+        margin: 2rem;
+    }
+
+    .about .container h1 {
+        margin-top: 3rem;
+    }
+
+    .separator {
+        margin-block: 3rem;
+    }
+
+    .ia-btn {
+        margin-top: 4rem;
+    }
+
+    :root {
+        --space: clamp(12px, 1.2vw, 24px);
+    }
+
+    .human-test .cards {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: rem;
+        
+        max-width: 1100px;
+        margin-inline: auto;
+    }
+
+    #ia-page .grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* ───────────────────────────────────────────────
+   ≥ 2101px — ultrawide
+   ─────────────────────────────────────────────── */
+@media (min-width: 2101px) {
+
+    main,
+    .container,
+    .about,
+    .human-test,
+    #ia-page {
+        margin-inline: auto;
+        max-width: 1440px;
+        width: min(100% - 4rem, 1440px);
+    }
+}
+
+/* ───────────────────────────────────────────────
+   Telas baixas em paisagem (ex: celulares deitados)
+   ─────────────────────────────────────────────── */
+@media (max-height: 480px) and (orientation: landscape) {
+
+    .about,
+    .human-test,
+    #ia-page {
+        padding-block: 1rem;
+    }
+
+    .about .img-principal img {
+        max-height: 55vh;
+    }
+
+    .human-test .cards,
+    #ia-page .grid {
+        gap: .75rem;
+    }
+}
+
+/* Mobile até tablets — adiciona respiro */
+@media (max-width: 1024px) {
+    main {
+        padding-inline: clamp(12px, 4vw, 24px);
+        box-sizing: border-box;
+    }
+}
+
+#ia-page {
+    padding-inline: clamp(12px, 4vw, 24px);
+}
+
+#ia-page .about-ia {
+    text-align: center;
+}
+
+#ia-page .about-ia>* {
+    margin-inline: auto;
+    max-width: 28ch;
+}
+
+#ia-page .grid {
+    display: grid;
+    gap: 1rem;
+    margin-inline: auto;
+    justify-content: center;
+    justify-items: stretch;
+    align-items: start;
+    width: 100%;
+    max-width: 720px;
+}
+
+#ia-page .grid .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 640px;
+}
+
+
+#ia-page .grid .card .icon {
+    display: grid;
+    place-items: center;
+    margin: 0 auto .5rem auto;
+    line-height: 1;
+    inline-size: max-content;
+}
+
+#ia-page .grid .card .icon img {
+    max-width: 40px;
+    height: auto;
+    display: block;
+}

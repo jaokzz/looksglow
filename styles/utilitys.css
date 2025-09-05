@@ -17,23 +17,23 @@ a {
   transition: all 0.25s ease-in-out;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container a.btn {
     font-size: 0.9rem;
     padding: 0.8rem 1.2rem;
     width: 100%;
     display: block;
   }
-}
+} */
 
-@media (width >=80em) {
+/* @media (width >=80em) {
   a.ia-btn {
     font-size: 0.9rem;
     text-align: center;
 
     padding: 0.8rem 1rem;
   }
-}
+} */
 
 .gap-3 {
   gap: 3rem;
