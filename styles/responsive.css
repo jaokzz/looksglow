@@ -179,15 +179,11 @@
         margin-inline: auto;
     }
 
-    .human-test .cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: .875rem;
-        margin-top: 1rem;
-    }
 
-    .human-test .card {
-        padding: 1rem;
+    .human-test .cards {
+        display: flex;
+        gap: 2rem;
+        margin-inline: auto;
     }
 
     .human-test .extra-info {

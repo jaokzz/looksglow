@@ -1,27 +1,26 @@
 # ✨ LooksGlow
 
-
 ---
 
-## 🎯 Objetivo  
+## 🎯 Objetivo;
 
 Criar uma rede social inovadora onde **tecnologia e beleza se encontram**,  
 permitindo que cada pessoa explore, aprimore e compartilhe sua imagem com confiança.  
 
 ---
 
-## 📌 Status  
+## 📌 Status;
 
 🚧 Projeto em desenvolvimento...  
 
 ---
 
-## 📜 Licença  
+## 📜 Licença;
 
 Este projeto está sob a licença **MIT**.  
 
 
-## 📸 Sobre o projeto  
+## 📸 Sobre o projeto;
 
 **Looksglow** é uma rede social voltada para **beleza, autoexpressão e confiança**.  
 Aqui os usuários podem:  
@@ -39,7 +38,7 @@ O objetivo é criar um espaço moderno e interativo, unindo **tecnologia + esté
 
 ---
 
-## 🚀 Tecnologias utilizadas (ou serão utilizadas)
+## 🚀 Tecnologias utilizadas (ou serão utilizadas);
 
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: Node.js + Python (IA)  
@@ -48,7 +47,7 @@ O objetivo é criar um espaço moderno e interativo, unindo **tecnologia + esté
 
 ---
 
-## 📂 Estrutura do Projeto  
+## 📂 Estrutura do Projeto;
 
 📦 looksglow <br>
 ┣ 📂 frontend <br>
