@@ -9,31 +9,6 @@
 }
 
 /* ───────────────────────────────────────────────
-   ≤ 360px — telefones muito pequenos
-   ─────────────────────────────────────────────── */
-@media (max-width: 360px) {
-    .face-page header .lista-and-logo {
-        gap: .75rem;
-    }
-
-    h1 {
-        font-size: clamp(1.4rem, 6vw, 1.8rem);
-    }
-
-    .btn,
-    .btn.btn--primary,
-    .btn.btn--outline,
-    .ia-btn {
-        font-size: .95rem;
-        padding: .6rem .9rem;
-    }
-
-    .icons {
-        gap: .4rem;
-    }
-}
-
-/* ───────────────────────────────────────────────
    ≤ 480px — mobile padrão
    ─────────────────────────────────────────────── */
 @media (max-width: 480px) {
@@ -49,12 +24,14 @@
         overflow-x: hidden;
     }
 
+    .desktop-only {
+        display: none;
+    }
 
     .face-page header .lista-and-logo {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
+        justify-content: space-between;
+        margin-top: 1rem;
     }
 
     .face-page header .logo svg {
@@ -80,10 +57,11 @@
         letter-spacing: -0.01em;
         text-align: center;
         margin-inline: auto;
+        margin-top: 1.5rem;
     }
 
     .about .container p {
-        font-size: clamp(0.95rem, 8vw, 1.05rem);
+        font-size: clamp(1.2rem, 8vw, 1.05rem);
         line-height: 1.45;
         text-align: center;
         margin-inline: auto;
@@ -102,6 +80,8 @@
     }
 
     .ia-btn {
+        margin-top: 2rem;
+
         width: 100%;
     }
 
@@ -146,7 +126,7 @@
 
     #ia-page .about-ia {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
 
     #ia-page .grid {
@@ -215,6 +195,10 @@
         margin-top: 1rem;
     }
 
+    .human-test .result-item {
+        margin-block: 1rem;
+    }
+
     h3 {
         font-size: clamp(1.1rem, 4.5vw, 1.35rem);
     }
@@ -232,19 +216,26 @@
    481–768px — celulares grandes até tablets pequenos
    ─────────────────────────────────────────────── */
 @media (min-width: 481px) and (max-width: 768px) {
+
+    .desktop-only {
+        display: none;
+    }
+
+
     .face-page header .lista-and-logo {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        align-items: center;
-        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
     }
 
     .lista ul.flex {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
+        display: none;
+    }
+
+    .about .container h1 {
+        margin-top: 2rem;
+        max-width: 600px;
+        font-size: 4rem;
     }
 
     .about {
@@ -257,9 +248,16 @@
     }
 
     .about .img-principal img {
-        width: min(100%, 560px);
-        height: auto;
-        margin-inline: auto;
+        display: none;
+    }
+
+    .ia-btn {
+        margin-top: 2rem;
+        text-align: center;
+        max-height: 110px;
+        max-width: 650px;
+
+        margin-bottom: 3rem;
     }
 
     .human-test {
@@ -273,10 +271,14 @@
         justify-items: center;
     }
 
+    .result-item {
+        margin: 1rem 0;
+    }
+
     .human-test .cards {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        display: flex;
+        gap: 2rem;
+        margin-inline: auto;
     }
 
     #ia-page {
@@ -287,6 +289,11 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1rem;
+
+    }
+
+    .grid .card {
+        height: 200px;
     }
 }
 
@@ -295,18 +302,36 @@
    ─────────────────────────────────────────────── */
 @media (min-width: 769px) and (max-width: 1024px) {
 
+    .desktop-only {
+        display: none;
+    }
+
     .face-page header .lista-and-logo {
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
         gap: 1rem;
+
+        margin-top: 1.3rem;
+        margin-bottom: 2rem;
     }
 
+
+
     .lista ul.flex {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .ia-btn {
+        margin-top: 2rem;
+        text-align: center;
+        max-height: 110px;
+        max-width: 650px;
+
+        white-space: nowrap;
+
+        margin-bottom: 3rem;
+
     }
 
     .face-page .flex {
@@ -326,9 +351,7 @@
     }
 
     .about .img-principal img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        display: none;
     }
 
     .human-test {
@@ -336,16 +359,25 @@
     }
 
     .human-test .profile-section {
-        display: grid;
-        grid-template-columns: .6fr 1.4fr;
-        gap: 1.25rem;
+        display: flex;
         align-items: center;
+        /* justify-content: center; */
+        gap: 4rem;
+        margin-left: 200px;
+
+        /* border: 4px solid red; */
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+
+    .human-test .result-item {
+        margin-block: 1rem;
     }
 
     .human-test .cards {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
     }
 
     #ia-page {
@@ -368,6 +400,12 @@
         grid-template-columns: auto 1fr;
         align-items: center;
         gap: 1rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .face-page {
+        margin: 2rem;
     }
 
     .face-page .flex {
@@ -377,7 +415,16 @@
     }
 
     .lista ul.flex {
-        gap: 1.25rem;
+        gap: 3.25rem;
+    }
+
+    .about .img-principal {
+        margin-left: 8rem;
+        margin-bottom: 4rem;
+    }
+
+    .ia-btn {
+        margin-block: 3rem;
     }
 
     .about {
@@ -387,10 +434,34 @@
         align-items: center;
     }
 
+    .human-test .profile-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin-right: 300px;
+    }
+
+    .results-list {
+        flex-direction: row;
+    }
+
+    .result-item {
+        margin-block: 1.2rem;
+        width: 280px;
+        ;
+    }
+
     .human-test .cards {
         display: grid;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1.25rem;
+
+        /* gap: rem; */
+
+        max-width: 1100px;
+        margin-inline: auto;
     }
 
     #ia-page .grid {
@@ -398,7 +469,12 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.25rem;
     }
+
+    .grid .card {
+        height: 200px;
+    }
 }
+
 
 /* ───────────────────────────────────────────────
    1366–1499px — desktops médios
@@ -415,12 +491,37 @@
         width: min(100% - 2rem, 1120px);
     }
 
+    .profile-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .human-test .results-list {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .ia-btn {
+        margin-bottom: 3rem;
+    }
+
+    .result-item {
+        margin-block: 1rem;
+        width: 280px;
+    }
+
     .human-test .cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     #ia-page .grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .grid .card {
+        height: 200px;
     }
 }
 
@@ -447,10 +548,29 @@
 
     .ia-btn {
         margin-top: 4rem;
+        margin-bottom: 7rem;
     }
 
     :root {
         --space: clamp(12px, 1.2vw, 24px);
+    }
+
+    .human-test .profile-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin-right: 300px;
+    }
+
+    .results-list {
+        flex-direction: row;
+    }
+
+    .result-item {
+        margin-block: 1.2rem;
+        width: 280px;
+        ;
     }
 
     .human-test .cards {
@@ -459,8 +579,8 @@
         justify-content: center;
         grid-template-columns: repeat(3, minmax(0, 1fr));
 
-        gap: rem;
-        
+        /* gap: rem; */
+
         max-width: 1100px;
         margin-inline: auto;
     }
@@ -469,6 +589,10 @@
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1.5rem;
+    }
+
+    .grid .card {
+        height: 200px;
     }
 }
 
@@ -532,13 +656,11 @@
 
 #ia-page .grid {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
     margin-inline: auto;
     justify-content: center;
-    justify-items: stretch;
     align-items: start;
     width: 100%;
-    max-width: 720px;
 }
 
 #ia-page .grid .card {

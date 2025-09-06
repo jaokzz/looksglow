@@ -1,11 +1,3 @@
-/* 
--Mobile (até ~640px): cards em 1 coluna.
--Tablet (~640–960px): cards em 2 colunas.
--Desktop (960px+): cards em 3 colunas. 
-*/
-
-/* Utilitis */
-
 .about-ia {
     margin-bottom: 3rem;
 
