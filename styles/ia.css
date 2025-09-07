@@ -20,7 +20,6 @@
     text-align: center;
 }
 
-
 #ia-page h2 {
     font-size: 2.4rem;
     margin-bottom: 1rem;
@@ -37,7 +36,6 @@
     gap: 28px;
 }
 
-
 .card {
     background: linear-gradient(145deg, #111111, #1a1a1a);
     border: 2px solid rgba(139, 92, 246, 0.35);
@@ -53,7 +51,6 @@
     width: 50px;
 }
 
-
 .card::after {
     content: "";
     position: absolute;
@@ -63,18 +60,15 @@
     transition: opacity 0.35s ease;
 }
 
-
 .card:hover::after {
     opacity: 0.2;
 }
-
 
 .card:hover {
     transform: translateY(-6px) scale(1.03);
     box-shadow: 0 10px 30px rgba(139, 92, 246, 0.35);
     border-color: #c084fc;
 }
-
 
 .icon {
     font-size: 2rem;
@@ -89,13 +83,11 @@
     color: #8b5cf6;
 }
 
-
 .title {
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 6px;
 }
-
 
 .desc {
     font-size: 0.92rem;
