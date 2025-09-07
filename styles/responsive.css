@@ -484,7 +484,7 @@
     #ia-page {
         margin-inline: auto;
         max-width: 1120px;
-        width: min(100% - 2rem, 1120px);
+        /* width: min(100% - 2rem, 1120px); */
     }
 
     .profile-section {
