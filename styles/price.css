@@ -139,6 +139,11 @@
     gap: .75rem;
 }
 
+.have {
+  font-family: "Inter", "Nunito", "Segoe UI Emoji", "Arial Unicode MS", sans-serif;
+}
+
+
 #price li.have {
     color: var(--text-500);
     background: url(/assets/icons/check.svg) no-repeat 0 .1rem/1.1rem;
