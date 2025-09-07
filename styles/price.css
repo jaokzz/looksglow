@@ -139,7 +139,7 @@
     gap: .75rem;
 }
 
-.have {
+.have, .havent {
   font-family: "Inter", "Nunito", "Segoe UI Emoji", "Arial Unicode MS", sans-serif;
 }
 
