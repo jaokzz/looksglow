@@ -26,7 +26,8 @@
 
 #price .container {
     max-width: 1200px;
-    margin-inline: auto;
+    margin: 0 auto;
+    padding-inline: 16px;
 }
 
 #price .container header {
@@ -49,12 +50,14 @@
     color: var(--text-500);
 }
 
+#price .card {
+  display: flex;
+  flex-direction: column;
+}
+
 #price .cards {
-    display: grid;
-    grid-template-columns: 0.92fr 1.16fr 0.92fr;
-    gap: 2rem;
-    margin-top: 2.5rem;
-    align-items: stretch;
+  display: grid;
+  gap: 2rem;
 }
 
 #price .container .card {
@@ -125,7 +128,6 @@
 
 #price .separator {
     height: 1px;
-    margin-top: auto;
     margin-bottom: 1.5rem;
     background: radial-gradient(var(--text-color-secondary, #8254d8),
             var(--surface-800, #151121) 70%);
@@ -139,23 +141,35 @@
     gap: .75rem;
 }
 
-.have, .havent {
-  font-family: "Inter", "Nunito", "Segoe UI Emoji", "Arial Unicode MS", sans-serif;
+#price ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: .75rem;
 }
 
-
-#price li.have {
-    color: var(--text-500);
-    background: url(/assets/icons/check.svg) no-repeat 0 .1rem/1.1rem;
-    padding-left: 2rem;
-    text-align: start;
+#price li.have,
+#price li.havent{
+  padding: 0;
+  text-align: left;
+  color: var(--text-500);
+  line-height: 1.45;
+  
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
-#price li.havent {
-    color: var(--text-500);
-    background: url(/assets/icons/notcheck.svg) no-repeat 0 .1rem/1.1rem;
-    padding-left: 2rem;
-    text-align: start;
+#price li svg{
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  margin-top: .15em;
+  fill: currentColor;
 }
 
 #price ul+small {
