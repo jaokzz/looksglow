@@ -51,13 +51,13 @@
 }
 
 #price .card {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #price .cards {
-  display: grid;
-  gap: 2rem;
+    display: grid;
+    gap: 2rem;
 }
 
 #price .container .card {
@@ -139,37 +139,44 @@
     padding-left: 0;
     display: grid;
     gap: .75rem;
+    text-align: start;
 }
 
-#price ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: .75rem;
-}
-
-#price li.have,
-#price li.havent{
-  padding: 0;
-  text-align: left;
-  color: var(--text-500);
-  line-height: 1.45;
-  
+#price ul li {
   display: flex;
   align-items: flex-start;
-  gap: .5rem;
-  
-  word-break: break-word;
-  overflow-wrap: anywhere;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
-#price li svg{
+#price ul li svg {
   width: 18px;
   height: 18px;
   flex: 0 0 18px;
-  margin-top: .15em;
+  margin-top: 0.15em;
   fill: currentColor;
+  display: inline-block;
+}
+
+.icon-check {
+  color: #4CAF50;
+}
+
+.icon-x {
+  color: #E53935; 
+}
+
+
+
+#price li svg.have {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    margin-top: .15em;
+    fill: currentColor;
+    /* herda a cor do texto */
+    display: inline-block;
+    /* garante que não colapse */
 }
 
 #price ul+small {
