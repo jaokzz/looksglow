@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de Privacidade — Looksglow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/login-register/style-terms.css" />
+</head>
+
+<body>
+    <main class="container">
+        <article class="card" id="top">
+            <h1>Política de Privacidade</h1>
+            <p class="lead">Explicamos como coletamos, usamos, compartilhamos e protegemos seus dados pessoais na
+                Looksglow.</p>
+
+            <div class="meta">
+                <span><strong>Controladora:</strong> Looksglow</span>
+                <span><strong>Última atualização:</strong> 09/09/2025</span>
+                <span><strong>Encarregado (DPO):</strong> <a
+                        href="mailto:comercial.looksglow@gmail.com">comercial.looksglow@gmail.com</a></span>
+            </div>
+
+            <nav class="toc">
+                <strong>Sumário</strong>
+                <ol>
+                    <li><a href="#dados">Dados Coletados</a></li>
+                    <li><a href="#uso">Como Usamos</a></li>
+                    <li><a href="#comp">Compartilhamento</a></li>
+                    <li><a href="#seg">Armazenamento e Segurança</a></li>
+                    <li><a href="#direitos">Direitos do Titular (LGPD)</a></li>
+                    <li><a href="#cookies">Cookies</a></li>
+                    <li><a href="#alteracoes">Alterações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ol>
+            </nav>
+
+            <section id="dados">
+                <h2>1. Dados Coletados</h2>
+                <ul>
+                    <li>Cadastro: nome, e-mail, senha (hash);</li>
+                    <li>Conteúdo: fotos enviadas para análise por IA;</li>
+                    <li>Pagamento (quando aplicável): tokens/IDs de processadores (não guardamos o número do cartão);
+                    </li>
+                    <li>Técnicos: logs, IP, device, cookies, analytics.</li>
+                </ul>
+            </section>
+
+            <section id="uso">
+                <h2>2. Como Usamos</h2>
+                <ul>
+                    <li>Autenticar e manter sua conta;</li>
+                    <li>Executar análise facial e gerar resultados;</li>
+                    <li>Segurança, prevenção a fraudes e melhoria do produto;</li>
+                    <li>Comunicações operacionais (ex.: avisos de conta).</li>
+                </ul>
+                <p class="notice"><strong>Base legal:</strong> execução de contrato, legítimo interesse e, quando
+                    exigido, consentimento.</p>
+            </section>
+
+            <section id="comp">
+                <h2>3. Compartilhamento</h2>
+                <p>Com terceiros essenciais (hospedagem, pagamentos, e-mail, analytics). Não vendemos seus dados.</p>
+            </section>
+
+            <section id="seg">
+                <h2>4. Armazenamento e Segurança</h2>
+                <ul>
+                    <li>Criptografia em repouso/trânsito sempre que possível;</li>
+                    <li>Política de retenção: mantemos apenas pelo tempo necessário ao serviço ou exigido por lei;</li>
+                    <li>Em caso de incidente, informaremos conforme a LGPD.</li>
+                </ul>
+            </section>
+
+            <section id="direitos">
+                <h2>5. Direitos do Titular (LGPD)</h2>
+                <p>Você pode solicitar acesso, correção, portabilidade, anonimização, oposição e exclusão. Contate: <a
+                        href="mailto:comercial.looksglow@gmail.com">comercial.looksglow@gmail.com</a>.</p>
+            </section>
+
+            <section id="cookies">
+                <h2>6. Cookies</h2>
+                <p>Usamos cookies essenciais (login), analíticos e de preferência. Você pode ajustar no navegador ou em
+                    nossas preferências de privacidade (quando disponível).</p>
+            </section>
+
+            <section id="alteracoes">
+                <h2>7. Alterações</h2>
+                <p>Esta política pode ser atualizada. Avisaremos mudanças relevantes no app/site.</p>
+            </section>
+
+            <section id="contato">
+                <h2>8. Contato</h2>
+                <p>Fale com o Encarregado (DPO): <a
+                        href="mailto:comercial.looksglow@gmail.com">comercial.looksglow@gmail.com</a></p>
+            </section>
+
+            <a class="backtop" href="#top">↑ Voltar ao topo</a>
+
+            <hr />
+            <div class="footer-links">
+                <a href="/termos.html">Termos de Uso</a>
+                <a href="/">Voltar ao site</a>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

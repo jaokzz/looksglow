@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Termos de Uso — Looksglow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/login-register/style-terms.css" />
+</head>
+
+<body>
+    <main class="container">
+        <article class="card" id="top">
+            <h1>Termos de Uso</h1>
+            <p class="lead">Ao utilizar a Looksglow, você concorda com as condições abaixo. Leia com atenção.</p>
+
+            <div class="meta">
+                <span><strong>Controladora:</strong> Looksglow</span>
+                <span><strong>Última atualização:</strong> 09/09/2025</span>
+                <span><strong>Contato:</strong> <a href="mailto:comercial.loogsglow@gmail.com">comercial.loogsglow@gmail.com</a></span>
+            </div>
+
+            <nav class="toc">
+                <strong>Sumário</strong>
+                <ol>
+                    <li><a href="#aceitacao">Aceitação dos Termos</a></li>
+                    <li><a href="#cadastro">Cadastro e Conta</a></li>
+                    <li><a href="#uso">Regras de Uso</a></li>
+                    <li><a href="#pagamentos">Planos e Pagamentos</a></li>
+                    <li><a href="#direitos">Direitos da Looksglow</a></li>
+                    <li><a href="#limitacao">Limitação de Responsabilidade</a></li>
+                    <li><a href="#alteracoes">Alterações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ol>
+            </nav>
+
+            <section id="aceitacao">
+                <h2>1. Aceitação dos Termos</h2>
+                <p>Ao criar conta ou usar a plataforma, você declara que leu e concorda com estes Termos de Uso.</p>
+            </section>
+
+            <section id="cadastro">
+                <h2>2. Cadastro e Conta</h2>
+                <ul>
+                    <li>Forneça informações verdadeiras e mantenha-as atualizadas.</li>
+                    <li>Você é responsável por proteger suas credenciais.</li>
+                    <li>Comunicações de segurança podem ser enviadas ao e-mail cadastrado.</li>
+                </ul>
+            </section>
+
+            <section id="uso">
+                <h2>3. Regras de Uso</h2>
+                <ul>
+                    <li>Não publique conteúdo ilegal, discriminatório, violento, sexualmente explícito ou que viole
+                        direitos autorais.</li>
+                    <li>É proibido explorar falhas, engenharia reversa ou automatizar acessos sem consentimento.</li>
+                    <li>Podemos suspender contas que violem estes Termos.</li>
+                </ul>
+                <p class="notice"><strong>Importante:</strong> conteúdos enviados pelos usuários podem ser removidos se
+                    violarem a lei ou estes Termos.</p>
+            </section>
+
+            <section id="pagamentos">
+                <h2>4. Planos e Pagamentos</h2>
+                <p>Alguns recursos são pagos. Valores, cobrança recorrente e cancelamento serão informados na
+                    contratação. Pagamentos são processados por parceiros externos.</p>
+            </section>
+
+            <section id="direitos">
+                <h2>5. Direitos da Looksglow</h2>
+                <p>Podemos alterar, suspender ou encerrar funcionalidades; realizar manutenção; e atualizar estes Termos
+                    quando necessário.</p>
+            </section>
+
+            <section id="limitacao">
+                <h2>6. Limitação de Responsabilidade</h2>
+                <p>A Looksglow não garante disponibilidade ininterrupta e não responde por danos decorrentes de mau uso,
+                    indisponibilidade ou atos de terceiros.</p>
+            </section>
+
+            <section id="alteracoes">
+                <h2>7. Alterações</h2>
+                <p>Atualizações relevantes serão comunicadas no app/site. O uso contínuo após mudanças implica
+                    concordância.</p>
+            </section>
+
+            <section id="contato">
+                <h2>8. Contato</h2>
+                <p>Dúvidas? <a href="mailto:comercial.loogsglow@gmail.com">comercial.loogsglow@gmail.com</a></p>
+            </section>
+
+            <a class="backtop" href="#top">↑ Voltar ao topo</a>
+
+            <hr />
+            <div class="footer-links">
+                <a href="/privacidade.html">Política de Privacidade</a>
+                <a href="/">Voltar ao site</a>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
