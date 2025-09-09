@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>looksglow — Entrar / Criar conta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth-style.css">
+</head>
+
+<body>
+  <main class="auth-shell">
+    <a class="brand" href="/">
+      <img src="../assets/looksglow.svg" alt="looksglow" onerror="this.style.display='none'">
+    </a>
+
+    <section class="card" aria-label="Área de autenticação">
+      <input type="radio" name="tab" id="tab-login" class="visually-hidden" checked>
+      <input type="radio" name="tab" id="tab-signup" class="visually-hidden">
+
+      <div class="tabs" role="tablist" aria-label="Selecionar Entrar ou Criar conta">
+        <label class="tab" for="tab-login" id="label-login" role="tab" aria-controls="panel-login"
+          aria-selected="true">Entrar</label>
+        <label class="tab" for="tab-signup" id="label-signup" role="tab" aria-controls="panel-signup"
+          aria-selected="false">Criar conta</label>
+        <span class="pill" aria-hidden="true"></span>
+      </div>
+
+      <form id="panel-login" class="panel" role="tabpanel" aria-labelledby="label-login" method="post"
+        action="/api/auth/login" novalidate>
+        <h1>Bem-vindo de volta!</h1>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" placeholder="email@exemplo.com" required>
+          <small class="error" aria-live="polite"></small>
+        </label>
+
+        <label class="field">
+          <span>Senha</span>
+          <input type="password" name="password" autocomplete="current-password" placeholder="••••••••" minlength="8"
+            required>
+          <small class="error" aria-live="polite"></small>
+        </label>
+
+        <div class="actions">
+          <label class="remember">
+            <input type="checkbox" name="remember"> <span>Manter conectado</span>
+          </label>
+          <a class="link" href="/forgot">Esqueci minha senha</a>
+        </div>
+
+        <button class="btn primary" type="submit">Entrar</button>
+
+        <p class="muted switch">
+          Novo por aqui?
+          <label for="tab-signup" class="link inline">Crie sua conta</label>
+        </p>
+      </form>
+
+      <form id="panel-signup" class="panel" role="tabpanel" aria-labelledby="label-signup" method="post"
+        action="/api/auth/register" novalidate>
+        <h1>Crie sua conta!</h1>
+
+        <div class="grid">
+          <label class="field">
+            <span>Nome</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Seu nome" required>
+            <small class="error" aria-live="polite"></small>
+          </label>
+
+          <label class="field">
+            <span>Username</span>
+            <input type="text" name="username" placeholder="ex: antoni_77 " minlength="3" maxlength="20"
+              pattern="[a-z0-9_\.]{3,20}" required>
+            <small class="hint">Use letras minúsculas, números, “_” ou “.”</small>
+            <small class="error" aria-live="polite"></small>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" placeholder="email@exemplo.com" required>
+          <small class="error" aria-live="polite"></small>
+        </label>
+
+        <label class="field">
+          <span>Senha</span>
+          <input type="password" name="password" autocomplete="new-password" placeholder="Mín. 8 caracteres"
+            minlength="8" required>
+          <small class="error" aria-live="polite"></small>
+        </label>
+
+        <label class="field">
+          <span>Confirmar senha</span>
+          <input type="password" name="confirm" placeholder="Repita a senha" minlength="8" required>
+          <small class="error" aria-live="polite"></small>
+        </label>
+
+        <label class="terms">
+          <input type="checkbox" name="terms" required>
+          <span>Eu aceito os <a class="link" href="/termos" target="_blank" rel="noopener">Termos</a> e a <a
+              class="link" href="/privacidade" target="_blank" rel="noopener">Privacidade</a>.</span>
+        </label>
+
+        <button class="btn primary" type="submit">Criar conta</button>
+
+        <p class="muted switch">
+          Já tem conta?
+          <label for="tab-login" class="link inline">Entrar</label>
+        </p>
+      </form>
+    </section>
+
+    <footer class="foot">
+      <p>©<span>LooksGlow</span> • Evolução, IA & comunidade</p>
+    </footer>
+  </main>
+</body>
+
+</html>

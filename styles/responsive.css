@@ -534,6 +534,11 @@
         margin: 2rem;
     }
 
+    .about img {
+        margin-top: 1rem;
+        margin-right: 6rem;
+    }
+
     .about .container h1 {
         margin-top: 3rem;
     }
